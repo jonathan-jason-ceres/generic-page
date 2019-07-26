@@ -64,4 +64,26 @@ footer {
     background: gray;
 }
 
+aside h4 {
+    padding: 1em .5em;
+}
+
+.menu-links {
+    margin-top: .5em;
+
+}
+
+.menu-links a:hover {
+    background: black;
+    color: white;
+}
+
+.menu-links a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: .5em;
+}
+
+
 
