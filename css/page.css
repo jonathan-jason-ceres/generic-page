@@ -25,28 +25,47 @@ header {
 
 aside {
     grid-area: menu;
-    background: grey;
+    background: #F0F0F0;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     grid-area: main;
-    background: lightcoral;
+    background: white;
+    padding: .5em;
+}
+
+h2 {
+    margin-bottom: .5em;
 }
 
 article {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
     grid-area: ads;
-    background: lightgreen;
+    background: white;
 }
 
 footer {
     grid-area: footer;
-    background: lightcyan;
+    background: #666666;
 }
 
+aside h4 {
+    padding: 1em .5em;
+}
+article section {
+    /*height: 100%;*/
+    width: 90%;
+    margin: 2em auto;
+}
 .top-nav {
     display: flex;
     list-style: none;
-
 }
 
 .top-nav a {
@@ -61,11 +80,7 @@ footer {
 }
 
 .logo {
-    background: gray;
-}
-
-aside h4 {
-    padding: 1em .5em;
+    background: #333333;
 }
 
 .menu-links {
@@ -84,6 +99,19 @@ aside h4 {
     color: black;
     padding: .5em;
 }
+
+.box-1 {
+    border: 1px solid black;
+    height: 40%;
+    width: 100%;
+    margin: 10px 0;
+
+}
+ .box-2 {
+     border: 1px solid black;
+     height: 80%;
+     width: 100%;
+ }
 
 
 
