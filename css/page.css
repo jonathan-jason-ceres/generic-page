@@ -18,7 +18,6 @@
     "menu footer footer";
 }
 
-
 header {
     grid-area: nav;
     background: black;
@@ -33,6 +32,10 @@ h2 {
 aside {
     grid-area: menu;
     background: #F0F0F0;
+}
+
+aside h4 {
+    padding: 1em .5em;
 }
 
 main {
@@ -50,27 +53,41 @@ h2 {
 
 article {
     display: flex;
-    height: fit-content;
+    /*height: fit-content;*/
     flex-direction: column;
-    justify-content: space-between;
     grid-area: ads;
     background: white;
 }
 
+article section {
+    height: fit-content;
+    width: 90%;
+    margin: auto;
+}
+
 footer {
+    display: flex;
+    flex-direction: column;
     grid-area: footer;
     background: #666666;
     color: white;
+
 }
 
-aside h4 {
-    padding: 1em .5em;
+footer h4 {
+    padding-left: .5em;
+    position: absolute;
+    bottom: 4em;
 }
 
-article section {
-    /*height: 100%;*/
-    width: 90%;
-    margin: 2em auto;
+footer p {
+    margin-top: auto;
+    padding: .5em;
+    background: #323232;
+}
+
+footer a {
+    color: white;
 }
 
 .top-nav {
@@ -139,17 +156,16 @@ article section {
 
 .box-1 {
     border: 1px solid black;
-    height: 40%;
+    height: 70px;
     width: 100%;
     margin: 10px 0;
 
 }
  .box-2 {
      border: 1px solid black;
-     height: 80%;
+     height: 110px;
      width: 100%;
  }
-
 
 
 
